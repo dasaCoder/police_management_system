@@ -42,3 +42,6 @@ D:\c#projects\dulanji\Project\PoliceRecordManagemenrSystem\PoliceRecordManagemen
 D:\c#projects\dulanji\Project\PoliceRecordManagemenrSystem\PoliceRecordManagemenrSystem\obj\Debug\PoliceRecordManagemenrSystem.csproj.CoreCompileInputs.cache
 D:\c#projects\dulanji\Project\PoliceRecordManagemenrSystem\PoliceRecordManagemenrSystem\obj\Debug\PoliceRecordManagemenrSystem.exe
 D:\c#projects\dulanji\Project\PoliceRecordManagemenrSystem\PoliceRecordManagemenrSystem\obj\Debug\PoliceRecordManagemenrSystem.pdb
+D:\c#projects\dulanji\Project\PoliceRecordManagemenrSystem\PoliceRecordManagemenrSystem\bin\Debug\itextsharp.dll
+D:\c#projects\dulanji\Project\PoliceRecordManagemenrSystem\PoliceRecordManagemenrSystem\bin\Debug\itextsharp.xml
+D:\c#projects\dulanji\Project\PoliceRecordManagemenrSystem\PoliceRecordManagemenrSystem\obj\Debug\PoliceRecordManagemenrSystem.csproj.CopyComplete

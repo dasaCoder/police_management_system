@@ -169,10 +169,10 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.splitContainer1.Panel2.Controls.Add(this.pnl_newentry);
             this.splitContainer1.Panel2.Controls.Add(this.pnlAddVictimforEntry);
             this.splitContainer1.Panel2.Controls.Add(this.pnlSingleEntry);
             this.splitContainer1.Panel2.Controls.Add(this.pnlEntryGrid);
-            this.splitContainer1.Panel2.Controls.Add(this.pnl_newentry);
             this.splitContainer1.Size = new System.Drawing.Size(1122, 567);
             this.splitContainer1.SplitterDistance = 256;
             this.splitContainer1.TabIndex = 0;

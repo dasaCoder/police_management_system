@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.13.1, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.1\lib\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -156,6 +159,7 @@
     <EmbeddedResource Include="fm_victims.resx">
       <DependentUpon>fm_victims.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="PoliceDataDataSet.xsc">
       <DependentUpon>PoliceDataDataSet.xsd</DependentUpon>
     </None>

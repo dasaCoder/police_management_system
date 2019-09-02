@@ -134,6 +134,7 @@
             this.button6.TabIndex = 4;
             this.button6.Text = "Proceed";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.Button6_Click);
             // 
             // txtSelectedVic
             // 

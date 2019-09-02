@@ -187,8 +187,8 @@ namespace PoliceRecordManagemenrSystem
                 //MessageBox.Show(entryId.ToString());
                 
                 MessageBox.Show("Entered Successfully!");
-                pnlAddVictimforEntry.Visible = false;
-                pnl_newentry.Visible = true;
+                //pnlAddVictimforEntry.Visible = false;
+                //pnl_newentry.Visible = true;
 
 
             }
