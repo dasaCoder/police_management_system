@@ -24,14 +24,24 @@ namespace PoliceRecordManagemenrSystem
 
         private void BtnSearch_Click(object sender, EventArgs e)
         {
-            SqlCommand query = new SqlCommand("select entry.entry_type,entry_date,des.entry_description, is_court_case " +
+            String str = "select entry.entry_type,entry_date,des.entry_description, is_court_case " +
                                               "from entryrecords entry,entrydescription des " +
-                                              "where entry.identry = des.identry " +
-                                              "and entry.entry_date between @sd and @ed");
+                                              "where entry.identry = des.identry "+
+                                              "and entry.entry_date between @sd and @ed";
+
+            if (cRtype.SelectedItem.ToString() != "*")
+            {
+                str += " and entry.entry_type = @type";
+            }
+            SqlCommand query = new SqlCommand(str);
             query.Parameters.AddWithValue("@sd", dt_startdate.Value);
             query.Parameters.AddWithValue("@ed", dt_enddate.Value);
-            Console.WriteLine(dt_enddate.Value);
-            Console.WriteLine(dt_startdate.Value);
+
+            if (cRtype.SelectedItem.ToString() != "*")
+            {
+                query.Parameters.AddWithValue("@type", cRtype.SelectedItem.ToString());
+            }
+
             query.CommandType = CommandType.Text;
             query.Connection = this.conn;
 
@@ -40,7 +50,7 @@ namespace PoliceRecordManagemenrSystem
                 this.conn.Open();
 
                 SqlDataReader rdr = query.ExecuteReader();
-
+                    datagridReport.Rows.Clear();
                     datagridReport.Rows.Add(10);
 
                     int x = 0;
@@ -240,6 +250,11 @@ namespace PoliceRecordManagemenrSystem
         private void Button2_Click_1(object sender, EventArgs e)
         {
             this.exportPdf();
+        }
+
+        private void Dt_startdate_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
