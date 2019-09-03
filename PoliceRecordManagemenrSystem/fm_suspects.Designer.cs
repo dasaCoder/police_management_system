@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fm_suspects));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.btn_home = new System.Windows.Forms.Button();
@@ -36,9 +37,6 @@
             this.btn_addsuspect = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnl_updatesuspect = new System.Windows.Forms.Panel();
-            this.table_suspectview = new System.Windows.Forms.TableLayoutPanel();
-            this.btn_update = new System.Windows.Forms.Button();
-            this.btn_cancelupdate = new System.Windows.Forms.Button();
             this.gb_entrydataupdate = new System.Windows.Forms.GroupBox();
             this.btn_searchsuspect = new System.Windows.Forms.Button();
             this.tb_suspectnic = new System.Windows.Forms.TextBox();
@@ -47,37 +45,47 @@
             this.gb_suspectdata = new System.Windows.Forms.GroupBox();
             this.btn_cancel = new System.Windows.Forms.Button();
             this.btn_save = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.rb_susfemale = new System.Windows.Forms.RadioButton();
-            this.rb_susmale = new System.Windows.Forms.RadioButton();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.lbl_occupation = new System.Windows.Forms.Label();
-            this.lbl_susaddress = new System.Windows.Forms.Label();
-            this.lbl_susbday = new System.Windows.Forms.Label();
-            this.lbl_susfname = new System.Windows.Forms.Label();
-            this.lbl_religon = new System.Windows.Forms.Label();
-            this.lbl_nationality = new System.Windows.Forms.Label();
-            this.lbl_suscontact = new System.Windows.Forms.Label();
-            this.lbl_susemail = new System.Windows.Forms.Label();
-            this.lbl_susstatus = new System.Windows.Forms.Label();
-            this.lbl_susgender = new System.Windows.Forms.Label();
-            this.lbl_suslname = new System.Windows.Forms.Label();
-            this.lbl_suspectnic = new System.Windows.Forms.Label();
             this.pnl_viewsuspect = new System.Windows.Forms.Panel();
             this.gb_viewsuspect = new System.Windows.Forms.GroupBox();
             this.btn_search = new System.Windows.Forms.Button();
             this.tb_entryidview = new System.Windows.Forms.TextBox();
             this.lbl_suspectview = new System.Windows.Forms.Label();
             this.table_suspectupdate = new System.Windows.Forms.TableLayoutPanel();
+            this.pnlEntryforsuspect = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.policeDataDataSet = new PoliceRecordManagemenrSystem.PoliceDataDataSet();
+            this.entryrecordsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.entryrecordsTableAdapter = new PoliceRecordManagemenrSystem.PoliceDataDataSetTableAdapters.entryrecordsTableAdapter();
+            this.identryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.entrytypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.entrydateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.divisionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iduserDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idvictimDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtSentryid = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.txtlname = new System.Windows.Forms.TextBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.txtcontact = new System.Windows.Forms.TextBox();
+            this.txtaddr = new System.Windows.Forms.RichTextBox();
+            this.dtdob = new System.Windows.Forms.DateTimePicker();
+            this.txtoccupa = new System.Windows.Forms.TextBox();
+            this.txtnic = new System.Windows.Forms.TextBox();
+            this.txtfname = new System.Windows.Forms.TextBox();
+            this.cgender = new System.Windows.Forms.ComboBox();
+            this.creligion = new System.Windows.Forms.ComboBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.cnationality = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -89,6 +97,12 @@
             this.gb_suspectdata.SuspendLayout();
             this.pnl_viewsuspect.SuspendLayout();
             this.gb_viewsuspect.SuspendLayout();
+            this.pnlEntryforsuspect.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.policeDataDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.entryrecordsBindingSource)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -109,8 +123,9 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.splitContainer1.Panel2.Controls.Add(this.pnl_updatesuspect);
             this.splitContainer1.Panel2.Controls.Add(this.pnl_newsuspect);
+            this.splitContainer1.Panel2.Controls.Add(this.pnlEntryforsuspect);
+            this.splitContainer1.Panel2.Controls.Add(this.pnl_updatesuspect);
             this.splitContainer1.Panel2.Controls.Add(this.pnl_viewsuspect);
             this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.SplitContainer1_Panel2_Paint);
             this.splitContainer1.Size = new System.Drawing.Size(1208, 584);
@@ -191,59 +206,12 @@
             this.pnl_updatesuspect.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnl_updatesuspect.Controls.Add(this.table_suspectview);
-            this.pnl_updatesuspect.Controls.Add(this.btn_update);
-            this.pnl_updatesuspect.Controls.Add(this.btn_cancelupdate);
             this.pnl_updatesuspect.Controls.Add(this.gb_entrydataupdate);
             this.pnl_updatesuspect.Location = new System.Drawing.Point(8, 3);
             this.pnl_updatesuspect.Name = "pnl_updatesuspect";
             this.pnl_updatesuspect.Size = new System.Drawing.Size(914, 567);
             this.pnl_updatesuspect.TabIndex = 11;
             this.pnl_updatesuspect.Visible = false;
-            // 
-            // table_suspectview
-            // 
-            this.table_suspectview.ColumnCount = 10;
-            this.table_suspectview.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 43.83562F));
-            this.table_suspectview.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 56.16438F));
-            this.table_suspectview.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 79F));
-            this.table_suspectview.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 76F));
-            this.table_suspectview.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 79F));
-            this.table_suspectview.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 56F));
-            this.table_suspectview.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 53F));
-            this.table_suspectview.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 52F));
-            this.table_suspectview.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 68F));
-            this.table_suspectview.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 195F));
-            this.table_suspectview.Location = new System.Drawing.Point(46, 187);
-            this.table_suspectview.Name = "table_suspectview";
-            this.table_suspectview.RowCount = 2;
-            this.table_suspectview.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.5F));
-            this.table_suspectview.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 84.5F));
-            this.table_suspectview.Size = new System.Drawing.Size(773, 242);
-            this.table_suspectview.TabIndex = 1;
-            // 
-            // btn_update
-            // 
-            this.btn_update.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_update.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_update.Enabled = false;
-            this.btn_update.Location = new System.Drawing.Point(675, 123);
-            this.btn_update.Name = "btn_update";
-            this.btn_update.Size = new System.Drawing.Size(102, 29);
-            this.btn_update.TabIndex = 4;
-            this.btn_update.Text = "Update";
-            this.btn_update.UseVisualStyleBackColor = false;
-            // 
-            // btn_cancelupdate
-            // 
-            this.btn_cancelupdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_cancelupdate.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_cancelupdate.Location = new System.Drawing.Point(791, 123);
-            this.btn_cancelupdate.Name = "btn_cancelupdate";
-            this.btn_cancelupdate.Size = new System.Drawing.Size(94, 29);
-            this.btn_cancelupdate.TabIndex = 3;
-            this.btn_cancelupdate.Text = "Cancel";
-            this.btn_cancelupdate.UseVisualStyleBackColor = false;
             // 
             // gb_entrydataupdate
             // 
@@ -291,7 +259,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnl_newsuspect.Controls.Add(this.gb_suspectdata);
-            this.pnl_newsuspect.Location = new System.Drawing.Point(3, 6);
+            this.pnl_newsuspect.Location = new System.Drawing.Point(0, 0);
             this.pnl_newsuspect.Name = "pnl_newsuspect";
             this.pnl_newsuspect.Size = new System.Drawing.Size(882, 531);
             this.pnl_newsuspect.TabIndex = 0;
@@ -302,36 +270,31 @@
             this.gb_suspectdata.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.gb_suspectdata.Controls.Add(this.txtlname);
+            this.gb_suspectdata.Controls.Add(this.label36);
+            this.gb_suspectdata.Controls.Add(this.txtcontact);
+            this.gb_suspectdata.Controls.Add(this.txtaddr);
+            this.gb_suspectdata.Controls.Add(this.dtdob);
+            this.gb_suspectdata.Controls.Add(this.txtoccupa);
+            this.gb_suspectdata.Controls.Add(this.txtnic);
+            this.gb_suspectdata.Controls.Add(this.txtfname);
+            this.gb_suspectdata.Controls.Add(this.cgender);
+            this.gb_suspectdata.Controls.Add(this.cnationality);
+            this.gb_suspectdata.Controls.Add(this.creligion);
+            this.gb_suspectdata.Controls.Add(this.label26);
+            this.gb_suspectdata.Controls.Add(this.label27);
+            this.gb_suspectdata.Controls.Add(this.label28);
+            this.gb_suspectdata.Controls.Add(this.label29);
+            this.gb_suspectdata.Controls.Add(this.label30);
+            this.gb_suspectdata.Controls.Add(this.label31);
+            this.gb_suspectdata.Controls.Add(this.label32);
+            this.gb_suspectdata.Controls.Add(this.label34);
+            this.gb_suspectdata.Controls.Add(this.label37);
             this.gb_suspectdata.Controls.Add(this.btn_cancel);
             this.gb_suspectdata.Controls.Add(this.btn_save);
-            this.gb_suspectdata.Controls.Add(this.textBox6);
-            this.gb_suspectdata.Controls.Add(this.richTextBox1);
-            this.gb_suspectdata.Controls.Add(this.dateTimePicker1);
-            this.gb_suspectdata.Controls.Add(this.textBox5);
-            this.gb_suspectdata.Controls.Add(this.textBox4);
-            this.gb_suspectdata.Controls.Add(this.textBox3);
-            this.gb_suspectdata.Controls.Add(this.textBox2);
-            this.gb_suspectdata.Controls.Add(this.textBox1);
-            this.gb_suspectdata.Controls.Add(this.rb_susfemale);
-            this.gb_suspectdata.Controls.Add(this.rb_susmale);
-            this.gb_suspectdata.Controls.Add(this.comboBox3);
-            this.gb_suspectdata.Controls.Add(this.comboBox2);
-            this.gb_suspectdata.Controls.Add(this.comboBox1);
-            this.gb_suspectdata.Controls.Add(this.lbl_occupation);
-            this.gb_suspectdata.Controls.Add(this.lbl_susaddress);
-            this.gb_suspectdata.Controls.Add(this.lbl_susbday);
-            this.gb_suspectdata.Controls.Add(this.lbl_susfname);
-            this.gb_suspectdata.Controls.Add(this.lbl_religon);
-            this.gb_suspectdata.Controls.Add(this.lbl_nationality);
-            this.gb_suspectdata.Controls.Add(this.lbl_suscontact);
-            this.gb_suspectdata.Controls.Add(this.lbl_susemail);
-            this.gb_suspectdata.Controls.Add(this.lbl_susstatus);
-            this.gb_suspectdata.Controls.Add(this.lbl_susgender);
-            this.gb_suspectdata.Controls.Add(this.lbl_suslname);
-            this.gb_suspectdata.Controls.Add(this.lbl_suspectnic);
             this.gb_suspectdata.Location = new System.Drawing.Point(12, 17);
             this.gb_suspectdata.Name = "gb_suspectdata";
-            this.gb_suspectdata.Size = new System.Drawing.Size(855, 490);
+            this.gb_suspectdata.Size = new System.Drawing.Size(855, 511);
             this.gb_suspectdata.TabIndex = 0;
             this.gb_suspectdata.TabStop = false;
             this.gb_suspectdata.Text = "Suspect Data";
@@ -340,235 +303,25 @@
             // 
             this.btn_cancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_cancel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_cancel.Location = new System.Drawing.Point(757, 85);
+            this.btn_cancel.Location = new System.Drawing.Point(678, 414);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(80, 29);
             this.btn_cancel.TabIndex = 27;
             this.btn_cancel.Text = "Cancel";
             this.btn_cancel.UseVisualStyleBackColor = false;
+            this.btn_cancel.Click += new System.EventHandler(this.Btn_cancel_Click);
             // 
             // btn_save
             // 
             this.btn_save.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_save.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_save.Location = new System.Drawing.Point(757, 40);
+            this.btn_save.Location = new System.Drawing.Point(678, 369);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(80, 29);
             this.btn_save.TabIndex = 26;
             this.btn_save.Text = "Save";
             this.btn_save.UseVisualStyleBackColor = false;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(524, 115);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(159, 22);
-            this.textBox6.TabIndex = 25;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(178, 150);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(232, 69);
-            this.richTextBox1.TabIndex = 24;
-            this.richTextBox1.Text = "";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(179, 113);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(231, 22);
-            this.dateTimePicker1.TabIndex = 23;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(178, 286);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(232, 22);
-            this.textBox5.TabIndex = 22;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(178, 239);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(232, 22);
-            this.textBox4.TabIndex = 21;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(525, 37);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(159, 22);
-            this.textBox3.TabIndex = 20;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(178, 73);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(232, 22);
-            this.textBox2.TabIndex = 19;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(178, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(232, 22);
-            this.textBox1.TabIndex = 18;
-            // 
-            // rb_susfemale
-            // 
-            this.rb_susfemale.AutoSize = true;
-            this.rb_susfemale.Location = new System.Drawing.Point(588, 77);
-            this.rb_susfemale.Name = "rb_susfemale";
-            this.rb_susfemale.Size = new System.Drawing.Size(72, 20);
-            this.rb_susfemale.TabIndex = 17;
-            this.rb_susfemale.TabStop = true;
-            this.rb_susfemale.Text = "Female";
-            this.rb_susfemale.UseVisualStyleBackColor = true;
-            // 
-            // rb_susmale
-            // 
-            this.rb_susmale.AutoSize = true;
-            this.rb_susmale.Location = new System.Drawing.Point(524, 77);
-            this.rb_susmale.Name = "rb_susmale";
-            this.rb_susmale.Size = new System.Drawing.Size(56, 20);
-            this.rb_susmale.TabIndex = 16;
-            this.rb_susmale.TabStop = true;
-            this.rb_susmale.Text = "Male";
-            this.rb_susmale.UseVisualStyleBackColor = true;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(178, 443);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(232, 24);
-            this.comboBox3.TabIndex = 15;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(178, 389);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(232, 24);
-            this.comboBox2.TabIndex = 14;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(178, 334);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(232, 24);
-            this.comboBox1.TabIndex = 13;
-            // 
-            // lbl_occupation
-            // 
-            this.lbl_occupation.AutoSize = true;
-            this.lbl_occupation.Location = new System.Drawing.Point(29, 236);
-            this.lbl_occupation.Name = "lbl_occupation";
-            this.lbl_occupation.Size = new System.Drawing.Size(76, 16);
-            this.lbl_occupation.TabIndex = 12;
-            this.lbl_occupation.Text = "Occupation";
-            this.lbl_occupation.Click += new System.EventHandler(this.Label13_Click);
-            // 
-            // lbl_susaddress
-            // 
-            this.lbl_susaddress.AutoSize = true;
-            this.lbl_susaddress.Location = new System.Drawing.Point(29, 163);
-            this.lbl_susaddress.Name = "lbl_susaddress";
-            this.lbl_susaddress.Size = new System.Drawing.Size(127, 16);
-            this.lbl_susaddress.TabIndex = 11;
-            this.lbl_susaddress.Text = "Permenant Address";
-            // 
-            // lbl_susbday
-            // 
-            this.lbl_susbday.AutoSize = true;
-            this.lbl_susbday.Location = new System.Drawing.Point(29, 116);
-            this.lbl_susbday.Name = "lbl_susbday";
-            this.lbl_susbday.Size = new System.Drawing.Size(80, 16);
-            this.lbl_susbday.TabIndex = 10;
-            this.lbl_susbday.Text = "Date of Birth";
-            // 
-            // lbl_susfname
-            // 
-            this.lbl_susfname.AutoSize = true;
-            this.lbl_susfname.Location = new System.Drawing.Point(29, 40);
-            this.lbl_susfname.Name = "lbl_susfname";
-            this.lbl_susfname.Size = new System.Drawing.Size(73, 16);
-            this.lbl_susfname.TabIndex = 9;
-            this.lbl_susfname.Text = "First Name";
-            // 
-            // lbl_religon
-            // 
-            this.lbl_religon.AutoSize = true;
-            this.lbl_religon.Location = new System.Drawing.Point(29, 329);
-            this.lbl_religon.Name = "lbl_religon";
-            this.lbl_religon.Size = new System.Drawing.Size(55, 16);
-            this.lbl_religon.TabIndex = 7;
-            this.lbl_religon.Text = "Religon";
-            // 
-            // lbl_nationality
-            // 
-            this.lbl_nationality.AutoSize = true;
-            this.lbl_nationality.Location = new System.Drawing.Point(29, 383);
-            this.lbl_nationality.Name = "lbl_nationality";
-            this.lbl_nationality.Size = new System.Drawing.Size(71, 16);
-            this.lbl_nationality.TabIndex = 6;
-            this.lbl_nationality.Text = "Nationality";
-            // 
-            // lbl_suscontact
-            // 
-            this.lbl_suscontact.AutoSize = true;
-            this.lbl_suscontact.Location = new System.Drawing.Point(440, 118);
-            this.lbl_suscontact.Name = "lbl_suscontact";
-            this.lbl_suscontact.Size = new System.Drawing.Size(74, 16);
-            this.lbl_suscontact.TabIndex = 5;
-            this.lbl_suscontact.Text = "Contact No";
-            // 
-            // lbl_susemail
-            // 
-            this.lbl_susemail.AutoSize = true;
-            this.lbl_susemail.Location = new System.Drawing.Point(29, 282);
-            this.lbl_susemail.Name = "lbl_susemail";
-            this.lbl_susemail.Size = new System.Drawing.Size(94, 16);
-            this.lbl_susemail.TabIndex = 4;
-            this.lbl_susemail.Text = "email address";
-            // 
-            // lbl_susstatus
-            // 
-            this.lbl_susstatus.AutoSize = true;
-            this.lbl_susstatus.Location = new System.Drawing.Point(29, 443);
-            this.lbl_susstatus.Name = "lbl_susstatus";
-            this.lbl_susstatus.Size = new System.Drawing.Size(45, 16);
-            this.lbl_susstatus.TabIndex = 3;
-            this.lbl_susstatus.Text = "Status";
-            // 
-            // lbl_susgender
-            // 
-            this.lbl_susgender.AutoSize = true;
-            this.lbl_susgender.Location = new System.Drawing.Point(440, 79);
-            this.lbl_susgender.Name = "lbl_susgender";
-            this.lbl_susgender.Size = new System.Drawing.Size(53, 16);
-            this.lbl_susgender.TabIndex = 2;
-            this.lbl_susgender.Text = "Gender";
-            // 
-            // lbl_suslname
-            // 
-            this.lbl_suslname.AutoSize = true;
-            this.lbl_suslname.Location = new System.Drawing.Point(438, 37);
-            this.lbl_suslname.Name = "lbl_suslname";
-            this.lbl_suslname.Size = new System.Drawing.Size(73, 16);
-            this.lbl_suslname.TabIndex = 1;
-            this.lbl_suslname.Text = "Last Name";
-            // 
-            // lbl_suspectnic
-            // 
-            this.lbl_suspectnic.AutoSize = true;
-            this.lbl_suspectnic.Location = new System.Drawing.Point(29, 76);
-            this.lbl_suspectnic.Name = "lbl_suspectnic";
-            this.lbl_suspectnic.Size = new System.Drawing.Size(82, 16);
-            this.lbl_suspectnic.TabIndex = 0;
-            this.lbl_suspectnic.Text = "Suspect NIC";
+            this.btn_save.Click += new System.EventHandler(this.Btn_save_Click);
             // 
             // pnl_viewsuspect
             // 
@@ -635,7 +388,7 @@
             this.table_suspectupdate.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 53F));
             this.table_suspectupdate.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 52F));
             this.table_suspectupdate.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 68F));
-            this.table_suspectupdate.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 195F));
+            this.table_suspectupdate.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 196F));
             this.table_suspectupdate.Location = new System.Drawing.Point(18, 128);
             this.table_suspectupdate.Name = "table_suspectupdate";
             this.table_suspectupdate.RowCount = 2;
@@ -643,6 +396,296 @@
             this.table_suspectupdate.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 84.5F));
             this.table_suspectupdate.Size = new System.Drawing.Size(856, 180);
             this.table_suspectupdate.TabIndex = 1;
+            // 
+            // pnlEntryforsuspect
+            // 
+            this.pnlEntryforsuspect.Controls.Add(this.groupBox2);
+            this.pnlEntryforsuspect.Controls.Add(this.groupBox1);
+            this.pnlEntryforsuspect.Location = new System.Drawing.Point(0, 0);
+            this.pnlEntryforsuspect.Name = "pnlEntryforsuspect";
+            this.pnlEntryforsuspect.Size = new System.Drawing.Size(910, 581);
+            this.pnlEntryforsuspect.TabIndex = 1;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.identryDataGridViewTextBoxColumn,
+            this.entrytypeDataGridViewTextBoxColumn,
+            this.entrydateDataGridViewTextBoxColumn,
+            this.divisionDataGridViewTextBoxColumn,
+            this.iduserDataGridViewTextBoxColumn,
+            this.idvictimDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.entryrecordsBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(79, 49);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(647, 317);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Location = new System.Drawing.Point(44, 137);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(822, 401);
+            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = " ";
+            // 
+            // policeDataDataSet
+            // 
+            this.policeDataDataSet.DataSetName = "PoliceDataDataSet";
+            this.policeDataDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // entryrecordsBindingSource
+            // 
+            this.entryrecordsBindingSource.DataMember = "entryrecords";
+            this.entryrecordsBindingSource.DataSource = this.policeDataDataSet;
+            // 
+            // entryrecordsTableAdapter
+            // 
+            this.entryrecordsTableAdapter.ClearBeforeFill = true;
+            // 
+            // identryDataGridViewTextBoxColumn
+            // 
+            this.identryDataGridViewTextBoxColumn.DataPropertyName = "identry";
+            this.identryDataGridViewTextBoxColumn.HeaderText = "identry";
+            this.identryDataGridViewTextBoxColumn.Name = "identryDataGridViewTextBoxColumn";
+            this.identryDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // entrytypeDataGridViewTextBoxColumn
+            // 
+            this.entrytypeDataGridViewTextBoxColumn.DataPropertyName = "entry_type";
+            this.entrytypeDataGridViewTextBoxColumn.HeaderText = "entry_type";
+            this.entrytypeDataGridViewTextBoxColumn.Name = "entrytypeDataGridViewTextBoxColumn";
+            // 
+            // entrydateDataGridViewTextBoxColumn
+            // 
+            this.entrydateDataGridViewTextBoxColumn.DataPropertyName = "entry_date";
+            this.entrydateDataGridViewTextBoxColumn.HeaderText = "entry_date";
+            this.entrydateDataGridViewTextBoxColumn.Name = "entrydateDataGridViewTextBoxColumn";
+            // 
+            // divisionDataGridViewTextBoxColumn
+            // 
+            this.divisionDataGridViewTextBoxColumn.DataPropertyName = "division";
+            this.divisionDataGridViewTextBoxColumn.HeaderText = "division";
+            this.divisionDataGridViewTextBoxColumn.Name = "divisionDataGridViewTextBoxColumn";
+            // 
+            // iduserDataGridViewTextBoxColumn
+            // 
+            this.iduserDataGridViewTextBoxColumn.DataPropertyName = "iduser";
+            this.iduserDataGridViewTextBoxColumn.HeaderText = "iduser";
+            this.iduserDataGridViewTextBoxColumn.Name = "iduserDataGridViewTextBoxColumn";
+            // 
+            // idvictimDataGridViewTextBoxColumn
+            // 
+            this.idvictimDataGridViewTextBoxColumn.DataPropertyName = "idvictim";
+            this.idvictimDataGridViewTextBoxColumn.HeaderText = "idvictim";
+            this.idvictimDataGridViewTextBoxColumn.Name = "idvictimDataGridViewTextBoxColumn";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.txtSentryid);
+            this.groupBox2.Location = new System.Drawing.Point(42, 25);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(823, 105);
+            this.groupBox2.TabIndex = 2;
+            this.groupBox2.TabStop = false;
+            // 
+            // txtSentryid
+            // 
+            this.txtSentryid.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.entryrecordsBindingSource, "identry", true));
+            this.txtSentryid.Location = new System.Drawing.Point(428, 49);
+            this.txtSentryid.Name = "txtSentryid";
+            this.txtSentryid.Size = new System.Drawing.Size(188, 22);
+            this.txtSentryid.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(635, 48);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(92, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Search";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // txtlname
+            // 
+            this.txtlname.Location = new System.Drawing.Point(151, 78);
+            this.txtlname.Name = "txtlname";
+            this.txtlname.Size = new System.Drawing.Size(232, 22);
+            this.txtlname.TabIndex = 44;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(38, 78);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(73, 16);
+            this.label36.TabIndex = 29;
+            this.label36.Text = "Last Name";
+            // 
+            // txtcontact
+            // 
+            this.txtcontact.Location = new System.Drawing.Point(525, 179);
+            this.txtcontact.Name = "txtcontact";
+            this.txtcontact.Size = new System.Drawing.Size(233, 22);
+            this.txtcontact.TabIndex = 49;
+            // 
+            // txtaddr
+            // 
+            this.txtaddr.Location = new System.Drawing.Point(37, 279);
+            this.txtaddr.Name = "txtaddr";
+            this.txtaddr.Size = new System.Drawing.Size(346, 68);
+            this.txtaddr.TabIndex = 48;
+            this.txtaddr.Text = "";
+            this.txtaddr.TextChanged += new System.EventHandler(this.Txtaddr_TextChanged);
+            // 
+            // dtdob
+            // 
+            this.dtdob.Location = new System.Drawing.Point(153, 157);
+            this.dtdob.Name = "dtdob";
+            this.dtdob.Size = new System.Drawing.Size(231, 22);
+            this.dtdob.TabIndex = 47;
+            // 
+            // txtoccupa
+            // 
+            this.txtoccupa.Location = new System.Drawing.Point(153, 196);
+            this.txtoccupa.Name = "txtoccupa";
+            this.txtoccupa.Size = new System.Drawing.Size(232, 22);
+            this.txtoccupa.TabIndex = 45;
+            // 
+            // txtnic
+            // 
+            this.txtnic.Location = new System.Drawing.Point(152, 117);
+            this.txtnic.Name = "txtnic";
+            this.txtnic.Size = new System.Drawing.Size(232, 22);
+            this.txtnic.TabIndex = 43;
+            // 
+            // txtfname
+            // 
+            this.txtfname.Location = new System.Drawing.Point(152, 38);
+            this.txtfname.Name = "txtfname";
+            this.txtfname.Size = new System.Drawing.Size(232, 22);
+            this.txtfname.TabIndex = 42;
+            // 
+            // cgender
+            // 
+            this.cgender.FormattingEnabled = true;
+            this.cgender.Items.AddRange(new object[] {
+            "Married",
+            "UnMarried"});
+            this.cgender.Location = new System.Drawing.Point(526, 133);
+            this.cgender.Name = "cgender";
+            this.cgender.Size = new System.Drawing.Size(232, 24);
+            this.cgender.TabIndex = 41;
+            // 
+            // creligion
+            // 
+            this.creligion.FormattingEnabled = true;
+            this.creligion.Items.AddRange(new object[] {
+            "Buddhist",
+            "Hindu"});
+            this.creligion.Location = new System.Drawing.Point(526, 45);
+            this.creligion.Name = "creligion";
+            this.creligion.Size = new System.Drawing.Size(232, 24);
+            this.creligion.TabIndex = 39;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(36, 193);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(76, 16);
+            this.label26.TabIndex = 38;
+            this.label26.Text = "Occupation";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(34, 247);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(127, 16);
+            this.label27.TabIndex = 37;
+            this.label27.Text = "Permenant Address";
+            this.label27.Click += new System.EventHandler(this.Label27_Click);
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(35, 160);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(80, 16);
+            this.label28.TabIndex = 36;
+            this.label28.Text = "Date of Birth";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(35, 44);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(73, 16);
+            this.label29.TabIndex = 35;
+            this.label29.Text = "First Name";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(415, 53);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(55, 16);
+            this.label30.TabIndex = 34;
+            this.label30.Text = "Religon";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(415, 181);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(74, 16);
+            this.label32.TabIndex = 32;
+            this.label32.Text = "Contact No";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(415, 137);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(53, 16);
+            this.label34.TabIndex = 30;
+            this.label34.Text = "Gender";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(35, 120);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(69, 16);
+            this.label37.TabIndex = 28;
+            this.label37.Text = "Victim NIC";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(415, 97);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(71, 16);
+            this.label31.TabIndex = 33;
+            this.label31.Text = "Nationality";
+            // 
+            // cnationality
+            // 
+            this.cnationality.FormattingEnabled = true;
+            this.cnationality.Items.AddRange(new object[] {
+            "Sinhala",
+            "Tamil"});
+            this.cnationality.Location = new System.Drawing.Point(526, 93);
+            this.cnationality.Name = "cnationality";
+            this.cnationality.Size = new System.Drawing.Size(232, 24);
+            this.cnationality.TabIndex = 40;
             // 
             // fm_suspects
             // 
@@ -658,6 +701,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Suspects";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Fm_suspects_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
@@ -672,6 +716,13 @@
             this.pnl_viewsuspect.ResumeLayout(false);
             this.gb_viewsuspect.ResumeLayout(false);
             this.gb_viewsuspect.PerformLayout();
+            this.pnlEntryforsuspect.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.policeDataDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.entryrecordsBindingSource)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -686,46 +737,53 @@
         private System.Windows.Forms.Button btn_home;
         private System.Windows.Forms.Panel pnl_newsuspect;
         private System.Windows.Forms.GroupBox gb_suspectdata;
-        private System.Windows.Forms.Label lbl_occupation;
-        private System.Windows.Forms.Label lbl_susaddress;
-        private System.Windows.Forms.Label lbl_susbday;
-        private System.Windows.Forms.Label lbl_susfname;
-        private System.Windows.Forms.Label lbl_religon;
-        private System.Windows.Forms.Label lbl_nationality;
-        private System.Windows.Forms.Label lbl_suscontact;
-        private System.Windows.Forms.Label lbl_susemail;
-        private System.Windows.Forms.Label lbl_susstatus;
-        private System.Windows.Forms.Label lbl_susgender;
-        private System.Windows.Forms.Label lbl_suslname;
-        private System.Windows.Forms.Label lbl_suspectnic;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.RadioButton rb_susfemale;
-        private System.Windows.Forms.RadioButton rb_susmale;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Panel pnl_updatesuspect;
-        private System.Windows.Forms.Button btn_update;
-        private System.Windows.Forms.Button btn_cancelupdate;
         private System.Windows.Forms.TableLayoutPanel table_suspectupdate;
         private System.Windows.Forms.GroupBox gb_entrydataupdate;
         private System.Windows.Forms.Button btn_searchsuspect;
         private System.Windows.Forms.TextBox tb_suspectnic;
         private System.Windows.Forms.Label lbl_entryidupdate;
         private System.Windows.Forms.Panel pnl_viewsuspect;
-        private System.Windows.Forms.TableLayoutPanel table_suspectview;
         private System.Windows.Forms.GroupBox gb_viewsuspect;
         private System.Windows.Forms.Button btn_search;
         private System.Windows.Forms.TextBox tb_entryidview;
         private System.Windows.Forms.Label lbl_suspectview;
         private System.Windows.Forms.Button btn_cancel;
         private System.Windows.Forms.Button btn_save;
+        private System.Windows.Forms.Panel pnlEntryforsuspect;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private PoliceDataDataSet policeDataDataSet;
+        private System.Windows.Forms.BindingSource entryrecordsBindingSource;
+        private PoliceDataDataSetTableAdapters.entryrecordsTableAdapter entryrecordsTableAdapter;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtSentryid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn identryDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn entrytypeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn entrydateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn divisionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iduserDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idvictimDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TextBox txtlname;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.TextBox txtcontact;
+        private System.Windows.Forms.RichTextBox txtaddr;
+        private System.Windows.Forms.DateTimePicker dtdob;
+        private System.Windows.Forms.TextBox txtoccupa;
+        private System.Windows.Forms.TextBox txtnic;
+        private System.Windows.Forms.TextBox txtfname;
+        private System.Windows.Forms.ComboBox cgender;
+        private System.Windows.Forms.ComboBox cnationality;
+        private System.Windows.Forms.ComboBox creligion;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label37;
     }
 }
